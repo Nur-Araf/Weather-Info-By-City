@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="build.css" />
+    <title>Weather Update with City</title>
+  </head>
+  <body class="bg-black m-0 p-0 font-serif box-border">
+    <div
+      class="w-[90%] max-w-[470px] bg-gradient-to-br from-green-400 to-indigo-600 text-[#fff] m-[100px_auto_0] rounded-3xl p-[40px_35px] text-center"
+    >
+      <div class="search w-[100%] flex items-center justify-between">
+        <input
+          type="text"
+          placeholder="Enter city Name"
+          spellcheck="false"
+          class="border-[0] outline-none bg-[#ebfffc] text-[#555] p-[10px_25px] h-[60px] rounded-[30px] flex-1 mr-4 text-[18px]"
+        />
+        <button
+          class="border-[0] outline-none bg-[#ebfffc] rounded-[50%] w-[60px] h-[60px] cursor-pointer"
+        >
+          <img src="images/search.png" class="w-[40px] h-[20px] pl-4" />
+        </button>
+      </div>
+
+      <div class="error text-left ml-[10px] text-[14px] mt-[10px] text-red-600 hidden">
+        <p>Invalid City Name</p>
+      </div>
+
+        <div class="weather hidden">
+            <img src="images/rain.png" class="weather-icon ml-20 mt-[30px]">
+            <h1 class="temp text-[80px] font-medium">22°C</h1>
+            <h2 class="city text-[45px] font-normal mt-[-10px]">New Delli</h2>
+
+            <div class="details flex items-center justify-between p-[0_20px] mt-[50px]">
+
+                <div class="flex items-center text-left">
+                    <img src="images/humidity.png" class="w-[60px] mr-[10px]">
+                    <div>
+                        <p class="humidity text-[28px] mt-[-6px]">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center text-left">
+                    <img src="images/wind.png" class="w-[60px] mr-[10px]">
+                    <div>
+                        <p class="wind text-[28px] mt-[-6px]">15 Km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
